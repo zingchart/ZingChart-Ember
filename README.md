@@ -15,6 +15,7 @@ In your template:
 {{ember-zingchart renderOptions=myRenderOptions chartData=myChartData themeData=myThemeData}}
 ```
 
+Only `chartData` is required to output a chart -- `renderOptions` and `themeData` will be set to default values if not defined in the handlebars template element and controller.
 Set the values for `renderOptions`, `chartData`, and `themeData` in a controller:
 
 ```javascript
@@ -64,6 +65,7 @@ export default Ember.Controller.extend({
 	} 
 });
 ```
+
 For more information on using ZingChart, visit [http://www.zingchart.com/docs/](http://www.zingchart.com/docs/).
 
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
