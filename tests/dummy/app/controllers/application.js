@@ -1,35 +1,6 @@
-# ember-zingchart
-
-A ZingChart component for Ember CLI
-
-## Installation
-
-* `npm install --save-dev ember-zingchart`
-* `ember g ember-zingchart`
-
-## Usage
-
-In your template: 
-
-```handlebars
-{{ember-zingchart renderOptions=myRenderOptions chartData=myChartData themeData=myThemeData}}
-```
-
-Set the values for `renderOptions`, `chartData`, and `themeData` in a controller:
-
-```javascript
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-	myRenderOptions:{
-		"height":400,
-		"width":"100%",
-		"events":{
-			node_click:function(p){
-				console.log(p);
-			}
-		}
-	},
 	myChartData:{
 		"type":"line",
 		"title":{
@@ -41,8 +12,23 @@ export default Ember.Controller.extend({
 		},
 		{
 			"values":[51,53,47,60,48,52,75,52,55,47,60,48]
+		},
+		{
+			"values":[42,43,30,40,31,48,55,46,48,32,38,38]
+		},
+		{
+			"values":[25,15,26,21,24,26,33,25,15,25,22,24]
 		}
 		]
+	},
+	myRenderOptions:{
+		"height":400,
+		"width":"100%",
+		"events":{
+			node_click:function(p){
+				console.log(p);
+			}
+		}
 	},
 	myThemeData:{
 		"palette" : {
@@ -59,10 +45,15 @@ export default Ember.Controller.extend({
 			"border-color":"#ddd",
 			"border-width":"1px",
 			"border-style":"solid",
-			"border-radius":5
+			"border-radius":5,
+			"title" : {
+				"background-color" : "#5f9af3",
+				"height":"30px",
+				"align":"center",
+				"font-color" : "#fff",
+				"border-radius-top-left":5,
+				"border-radius-top-right":5
+			},
 		}
 	} 
 });
-```
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).

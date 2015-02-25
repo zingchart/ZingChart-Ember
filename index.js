@@ -2,5 +2,11 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-zingchart'
+  name: 'ember-zingchart',
+
+  included: function(app) {
+    this._super.included(app);
+
+    app.import(app.bowerDirectory + '/zingchart/zingchart.min.js');
+  }
 };
