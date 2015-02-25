@@ -64,5 +64,6 @@ export default Ember.Controller.extend({
 	} 
 });
 ```
+For more information on using ZingChart, visit [http://www.zingchart.com/docs/](http://www.zingchart.com/docs/).
 
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
