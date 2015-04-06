@@ -7,6 +7,6 @@ module.exports = {
   included: function(app) {
     this._super.included(app);
 
-    app.import(app.bowerDirectory + '/zingchart/zingchart.min.js');
+    app.import(app.bowerDirectory + '/zingchart/client/zingchart.min.js');
   }
 };
