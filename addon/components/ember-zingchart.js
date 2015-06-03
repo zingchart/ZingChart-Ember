@@ -57,7 +57,6 @@ export default Ember.Component.extend({
 		if(buildOptions[2]!=null){
 			options['defaults']=buildOptions[2];
 		}
-		console.log(options);
 		zingchart.render(options);
 	},
 	_destroyChart: (function() {
@@ -65,4 +64,4 @@ export default Ember.Component.extend({
 		zingchart.exec(self.elementId,'destroy');
 	}).on('willDestroyElement')
 
-}); 
+});
