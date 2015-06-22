@@ -1,6 +1,6 @@
 {
   "name": "ember-zingchart",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Ember component for the ZingChart JavaScript charting library.",
   "directories": {
     "test": "tests"
