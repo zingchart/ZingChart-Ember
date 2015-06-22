@@ -10,7 +10,10 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "https://www.github.com/zingchart/ember-zingchart",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zingchart/ember-zingchart.git"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
