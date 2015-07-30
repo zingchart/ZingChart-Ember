@@ -9,14 +9,22 @@ A ZingChart component for Ember CLI
 
 ## Usage
 
-In your template:  
+Use the following custom element to a Handlebars template file:
 
 ```handlebars
-{{ember-zingchart renderOptions=myRenderOptions chartData=myChartData themeData=myThemeData}}
+{{ember-zingchart chartData=myChartData renderOptions=myRenderOptions themeData=myThemeData}}
 ```
 
-Only `chartData` is required to output a chart -- `renderOptions` and `themeData` will be set to default values if not defined in the handlebars template element and controller. 
-Set the values for `renderOptions`, `chartData`, and `themeData` in a controller:
+###Properties
+|    Property   |    Required?  | Type | Description  |
+| :------------- |:-------------:| :----:| :---- |
+| chartData | required | Object | Chart configuration object used to configure the individual elements of a chart.|
+| renderOptions | optional | Object |Options object used to set zingchart.render() options.|
+| themeData | optional | Object | Theme object used to style the elements of a chart. |
+
+The configuration objects for `chartData`, `renderOptions`, and `themeData` are stored in an Ember controller.
+
+###Example Controller
 
 ```javascript
 import Ember from 'ember';
