@@ -4,7 +4,7 @@ A ZingChart component for Ember CLI
 
 ## Installation 
 
-* `npm install --save-dev ember-zingchart`
+* `npm install --save ember-zingchart`
 * `ember g ember-zingchart`
 
 ## Usage
