@@ -44,12 +44,15 @@ export default Ember.Component.extend({
 
 		return [renderOptions,chartData,themeData];
 	}),
-	_renderChart: (function() {
+
+	_renderChart: Ember.on('didInsertElement', function() {
 		this.renderLater();
-	}).on('didInsertElement'),
-	renderLater:function(){
+	}),
+
+	renderLater:function() {
 		Ember.run.scheduleOnce('afterRender',this,'render');
 	},
+
 	render:function(){
 		var buildOptions=this.get('buildOptions');
 		var options=buildOptions[0];
@@ -59,9 +62,10 @@ export default Ember.Component.extend({
 		}
 		zingchart.render(options);
 	},
-	_destroyChart: (function() {
+
+	_destroyChart: Ember.on('willDestroyElement', function() {
 		var self=this;
 		zingchart.exec(self.elementId,'destroy');
-	}).on('willDestroyElement')
+	})
 
 });
