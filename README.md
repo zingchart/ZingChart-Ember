@@ -1,6 +1,13 @@
-# ember-zingchart 
+# ZingChart-Ember 
 
 A ZingChart component for Ember CLI 
+
+## Resources: 
+* [Getting Started Guide](https://blog.zingchart.com/2015/02/24/zingchart-ember-js/) & [Guide Update](https://blog.zingchart.com/2016/04/25/new-ember-charts-wrapper-from-zingchart/?q=new%20ember%20charts%20wrapper%20from%20zingchart)
+* [Docs](http://www.zingchart.com/docs) 
+* [Support](https://help.zingchart.com/hc/en-us)
+* [Stack Overflow](http://stackoverflow.com/search?q=zingchart)
+
 
 ## Installation 
 
