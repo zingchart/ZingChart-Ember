@@ -22,14 +22,14 @@ Use the following custom element to a Handlebars template file:
 {{ember-zingchart renderOptions=myRenderOptions}}
 ```
 
-###Properties
+### Properties
 |    Property   |    Required?  | Type | Description  |
 | :------------- |:-------------:| :----:| :---- |
 | renderOptions | required | Object | [Render method](http://www.zingchart.com/docs/developers/zingchart-object-and-methods/#render-method) configuration object used to configure the individual elements of a chart.|
 
 The configuration object `renderOptions` is stored in tests/dummy/app/controllers/application.js.
 
-###Example Controller
+### Example Controller
 
 ```
 import Ember from 'ember';
